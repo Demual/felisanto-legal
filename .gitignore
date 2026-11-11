@@ -1,0 +1,17 @@
+
+# Secretos y binarios (normas del Cuartel)
+.env
+.env.*
+*.jks
+*.keystore
+key.properties
+local.properties
+*.pem
+*.key
+TOKEN*
+*credential*
+*.apk
+*.aab
+Thumbs.db
+desktop.ini
+*.tmp

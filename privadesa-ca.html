@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privadesa · FeliSanto</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #241a1c; background: #fff8f3;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #f1e5e3; background: #1a1213; }
+    td, th { border-color: #3f2a2f !important; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #961e3a; }
+  h3 { font-size: 1.05rem; margin-top: 1.75rem; }
+  @media (prefers-color-scheme: dark) { h2 { color: #f0a3b4; } a { color: #f0a3b4; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .borrador { display: inline-block; margin: .25rem 0 0; padding: .1rem .65rem; border: 1px dashed #b8860b; border-radius: 999px; font-size: .8rem; color: #7a5806; }
+  @media (prefers-color-scheme: dark) { .borrador { color: #e2bc5a; border-color: #e2bc5a; } }
+  .clave { border-left: 4px solid #961e3a; padding: .5rem 0 .5rem 1rem; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Política de privadesa</h1>
+<p class="fecha">Aplicació <strong>FeliSanto</strong> (<code>com.jrsoft.felisanto</code>) · Darrera actualització: 11 de novembre de 2026</p>
+<p class="borrador">Esborrany pendent de revisió · no publicat</p>
+
+<div class="clave">
+<p><strong>En una frase:</strong> FeliSanto et diu quins sants se celebren cada dia i quan és l’onomàstica de cada nom, i t’avisa perquè felicitis a temps. Funciona sense connexió, sense comptes i sense servidors propis: les persones que apuntes i les teves festes es desen al teu telèfon i no en surten tret del que tu decideixis compartir. A part d’això, només en surten les dades tècniques i publicitàries que recull Google per servir els anuncis, explicades més avall.</p>
+</div>
+
+<h2>Qui n’és el responsable</h2>
+<p>El responsable del tractament és <strong>JR Soft</strong>, nom comercial de <strong>Javier Román Sáez</strong>, desenvolupador de l’aplicació FeliSanto. Pots contactar-hi a <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong>.</p>
+
+<h2>El que aquesta aplicació NO fa</h2>
+<ul>
+  <li>No hi ha registre, compte, usuari ni contrasenya de l’aplicació. Mai no se’t demana el teu nom, un correu, un telèfon ni la teva ubicació.</li>
+  <li><strong>No puja les teves dades.</strong> Les persones que apuntes, les seves dates, les teves festes i els teus avisos es desen al teu telèfon. Aquesta aplicació no té servidors propis: JR Soft no en rep mai res.</li>
+  <li>L’aplicació no inclou cap eina pròpia d’analítica ni d’informes d’errors (ni Google Analytics, ni Firebase Analytics, ni Crashlytics) i no fa servir Firebase. L’SDK de publicitat de Google sí que envia les seves pròpies dades tècniques, explicades més avall.</li>
+  <li>No venem ni lloguem les teves dades. Per mostrar i mesurar anuncis, l’SDK d’anuncis de Google (AdMob) recull identificadors del dispositiu i els envia a Google, tal com s’explica en aquesta política. Algunes lleis de privadesa dels EUA poden considerar això «vendre» o «compartir» dades personals (consulta «<a href="#eeuu">Residents als EUA</a>»).</li>
+  <li><strong>No llegeix la teva agenda.</strong> L’aplicació no demana el permís per llegir els contactes (<code>READ_CONTACTS</code>), així que no ho pot fer. Si fas servir «Triar dels contactes», s’obre el selector de contactes d’Android: Android només li dona accés al contacte que tries, i d’aquest contacte l’aplicació només en llegeix el nom, que es desa com el de qualsevol persona que apuntes a mà. No s’envia res.</li>
+  <li>No demana permís per fer servir la teva ubicació, la càmera, les teves fotos ni els teus fitxers.</li>
+  <li>No et pregunta la teva religió ni desa res sobre les teves creences o pràctiques: FeliSanto és una aplicació d’onomàstiques i de tradició.</li>
+  <li>Les teves dades no s’inclouen a la còpia de seguretat d’Android al núvol de Google.</li>
+</ul>
+
+<h2>Permisos</h2>
+<ul>
+  <li><strong>Notificacions</strong> (<code>POST_NOTIFICATIONS</code>), per a l’avís diari del sant i els avisos de les onomàstiques. A Android 13 o posterior, només es demana quan actives un avís. Els avisos els programa el mateix telèfon: no arriben de cap servidor.</li>
+  <li><strong>Executar-se en iniciar el telèfon</strong> (<code>RECEIVE_BOOT_COMPLETED</code>), per tornar a programar els avisos i posar al dia el giny (widget) després de reiniciar el mòbil.</li>
+  <li><strong>Internet</strong>, <strong>estat de la xarxa</strong> i <strong>identificador de publicitat</strong> (<code>AD_ID</code> i els permisos dels serveis de publicitat d’Android), que necessita la publicitat (mira més avall). Les biblioteques de Google també hi afegeixen el permís tècnic de les seves tasques en segon pla (<code>WAKE_LOCK</code>). Les persones que apuntes i les teves festes no surten per aquí.</li>
+  <li>Cap més: ni de contactes, ni d’ubicació, ni de càmera, ni d’emmagatzematge, ni d’alarmes exactes. Per això els avisos poden arribar amb uns minuts de marge.</li>
+</ul>
+
+<h2>Dades que només es queden al teu telèfon</h2>
+<p>Aquesta informació es desa a l’emmagatzematge privat de l’aplicació. Desapareix si desinstal·les l’aplicació o si n’esborres les dades des de la configuració d’Android.</p>
+<ul>
+  <li>Les <strong>persones</strong> que apuntes: el nom, el sant o la data que tries (i si celebra la data tradicional) i amb quanta antelació vols l’avís.</li>
+  <li>Les teves <strong>festes</strong> («Les meves festes»): el títol i el dia.</li>
+  <li>Els <strong>avisos programats</strong>, amb el text ja preparat, perquè Android els mostri a l’hora.</li>
+  <li>El que mostrarà el <strong>giny</strong> els pròxims dies, preparat per endavant perquè canviï de dia encara que no obris l’aplicació.</li>
+  <li>La teva configuració: tema, idioma, si l’avís diari està activat, l’hora dels avisos, si ja has vist la benvinguda i uns comptadors d’ús per saber quan demanar-te una valoració.</li>
+</ul>
+<p>El santoral va dins de l’aplicació: consultar un sant o cercar un nom funciona sense connexió, i el que cerques no surt del telèfon. Els avisos i el giny també funcionen dins del telèfon.</p>
+<p><strong>Esborrar les meves dades.</strong> <em>Configuració → Esborrar les meves dades</em> esborra les persones, les teves festes i els avisos, i deixa els avisos amb la configuració inicial. Només s’hi queden el tema, l’idioma, que ja has vist la benvinguda i els comptadors de la valoració. El giny deixa de mostrar aquests noms.</p>
+<p><strong>El que es veu fora de l’aplicació.</strong> El giny de la pantalla d’inici mostra el sant del dia i, si aquell dia toca felicitar algú, el seu nom (o el títol de la teva festa, si aquell dia no hi ha sant). Qui vegi la teva pantalla d’inici veurà aquests noms. Els avisos de les onomàstiques també porten el nom de la persona i, segons com tinguis configurada la pantalla de bloqueig, Android els pot mostrar allà.</p>
+<p><strong>Còpies de seguretat i canvi de mòbil.</strong> La còpia de seguretat d’Android al núvol (la del teu compte de Google) està desactivada per a les dades d’aquesta aplicació: no se’n puja cap. Android sí que desa al teu compte la llista de les aplicacions que tenies instal·lades, per tornar-les a instal·lar, però aquesta llista la gestiona Google i no porta dades de l’aplicació.</p>
+<p>Si en configurar un mòbil nou copies les teves dades directament des de l’antic, amb cable o sense, les dades de l’aplicació (les persones que apuntes, les teves festes i la teva configuració) poden passar al mòbil nou. Aquest traspàs el demanes tu i el fa Android, amb la seva eina o amb la del fabricant del mòbil i amb les seves pròpies condicions. Segons la documentació d’Android, va d’un mòbil a l’altre sense passar per servidors. En cap cas no passa pels nostres: JR Soft no rep res.</p>
+<p>Que es faci depèn de la versió d’Android i del fabricant (a Android 8 o anterior no es fa), així que no ho podem garantir. Si configures el mòbil nou des de la còpia del teu compte de Google, sense l’antic, les dades d’aquesta aplicació no tornen, perquè no són en aquesta còpia.</p>
+<p>No es traspassa el que només serveix al mòbil antic, com els avisos ja programats (l’aplicació els torna a programar al mòbil nou quan l’obres) o la teva elecció sobre els anuncis i la resta de l’estat dels anuncis: al mòbil nou l’aplicació et tornarà a demanar la teva elecció.</p>
+
+<h2>El que decideixes compartir tu</h2>
+<ul>
+  <li><strong>Felicitar.</strong> La targeta de felicitació és una imatge que es crea al teu telèfon, amb el nom que hi escriguis. Només en surt quan la comparteixes, amb l’aplicació i la persona que triïs a la pantalla de compartir d’Android.</li>
+  <li><strong>Comparteix l’app.</strong> Comparteix, amb l’aplicació que triïs, un text amb l’enllaç de FeliSanto a Google Play. L’enllaç porta un paràmetre que només indica que s’ha compartit des de «Comparteix l’app», sense cap dada teva.</li>
+  <li><strong>Escriu-nos.</strong> Obre la teva aplicació de correu amb un missatge adreçat a nosaltres, amb l’assumpte «FeliSanto». Només s’envia si tu l’envies.</li>
+  <li><strong>Avisa’ns d’un error.</strong> «Hi ha alguna cosa malament? Avisa’ns», a la fitxa de cada sant, i «Falta aquest nom? Avisa’ns», quan una cerca no troba res, obren la teva aplicació de correu amb un missatge ja escrit, que només s’envia si tu l’envies. Porta el sant (el seu nom i el seu identificador) o el nom que has cercat, l’idioma de l’aplicació i la seva versió. No porta res de les persones que apuntes ni de les teves festes.</li>
+</ul>
+<p>Si ens escrius per qualsevol d’aquestes dues vies, rebem la teva adreça de correu i el que ens expliquis. Ho fem servir només per respondre’t i corregir la dada, i esborrem el missatge quan l’assumpte està resolt i, com a màxim, un any després de rebre’l.</p>
+
+<h2>Dades que sí que surten del telèfon</h2>
+
+<h3>Publicitat: Google AdMob</h3>
+<p>L’aplicació és gratuïta i es manté amb anuncis discrets de Google AdMob: un bàner al peu de les pantalles Avui, Calendari i Cercar, de tant en tant un anunci entre els resultats de la cerca i un al final de la fitxa de cada sant, separat del contingut. Mai no n’apareixen a Persones, a Configuració, a la felicitació, al giny, als avisos ni a pantalla completa. Les peticions d’anuncis no porten res de les persones que apuntes, de les teves festes ni del que cerques. Els anuncis es limiten a contingut apte per a adolescents (classificació T).</p>
+<p>Com qualsevol aplicació amb AdMob, l’SDK de Google recull pel seu compte l’<strong>identificador de publicitat</strong> d’Android (el pots restablir o esborrar a <em>Configuració d’Android → Google → Anuncis</em>), l’identificador del conjunt d’aplicacions (<em>app set ID</em>), la teva adreça IP (de la qual es dedueix una ubicació aproximada), les interaccions amb l’aplicació i amb els anuncis i dades de diagnòstic. Google les fa servir per servir i mesurar la publicitat, per a estadístiques i per prevenir fraus, segons la seva pròpia política.</p>
+<p>A l’Espai Econòmic Europeu, al Regne Unit i a Suïssa, l’aplicació mostra el formulari de consentiment de Google abans de servir publicitat personalitzada. Pots canviar la teva elecció quan vulguis a <em>Configuració → Opcions de privadesa dels anuncis</em>. Si ho rebutges, veuràs publicitat no personalitzada (o limitada, sense identificadors, si tampoc no acceptes l’ús de l’emmagatzematge) i l’aplicació funciona exactament igual.</p>
+<p>Com fa servir Google la informació de les aplicacions que utilitzen els seus serveis: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+
+<h3>Valoracions i Google Play</h3>
+<p>De tant en tant, després d’un bon moment (per exemple, quan deses una persona o comparteixes una felicitació), l’aplicació et pot demanar una valoració amb la finestra oficial de Google Play, que gestiona Google. «Valora l’app» i «Més aplicacions de JR Soft» obren Google Play; els seus enllaços porten un paràmetre de campanya que només indica que s’han obert des de FeliSanto, sense cap dada teva. Per mostrar-te només les aplicacions disponibles al teu país, «Més aplicacions de JR Soft» mira al telèfon el país de la targeta SIM o, si no n’hi ha, el de la regió del sistema. No necessita cap permís i aquesta dada no surt del mòbil.</p>
+
+<h3>Adreça IP</h3>
+<p>Com en qualsevol aplicació que es connecta a internet, els serveis de Google esmentats reben la teva adreça IP i les dades tècniques de la connexió quan s’hi connecten. Aquesta aplicació no té servidors propis, així que no desa registres de cap mena.</p>
+
+<h2>Tercers implicats</h2>
+<table>
+  <tr><th>Servei</th><th>Per a què</th><th>La seva política</th></tr>
+  <tr>
+    <td>Google AdMob</td>
+    <td>Publicitat i formulari de consentiment</td>
+    <td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td>
+  </tr>
+  <tr>
+    <td>Google Play</td>
+    <td>Valoracions i enllaços a la fitxa de les aplicacions</td>
+    <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Les aplicacions que triïs</td>
+    <td>Només quan comparteixes una felicitació o l’app, o ens escrius (correu, missatgeria)</td>
+    <td>La de cada aplicació</td>
+  </tr>
+</table>
+
+<h2>Transferències internacionals</h2>
+<p>Google LLC pot tractar aquestes dades als Estats Units i en altres països. Google està adherit al <strong>Marc de privadesa de dades UE-EUA</strong> (EU-U.S. Data Privacy Framework), objecte de la decisió d’adequació de la Comissió Europea de 10 de juliol de 2023, i a les seves ampliacions per al Regne Unit i Suïssa, i fa servir <strong>clàusules contractuals tipus</strong> quan calen: <a href="https://policies.google.com/privacy/frameworks">policies.google.com/privacy/frameworks</a>. L’adreça de correu de contacte també fa servir un servei de Google (Gmail).</p>
+
+<h2>Base legal i conservació</h2>
+<p><strong>Base jurídica.</strong> (1) El <strong>funcionament de l’aplicació</strong> (el santoral, les persones que apuntes, les teves festes, els avisos i el giny): és el que cal per donar-te el servei que demanes quan la fas servir (art. 6.1.b RGPD). Tot això es processa al teu telèfon i no arriba a JR Soft; el traspàs entre mòbils el fas tu amb una funció d’Android i tampoc no ens n’arriba cap dada. (2) Publicitat personalitzada i ús de l’emmagatzematge del dispositiu amb finalitats publicitàries a l’EEE, al Regne Unit i a Suïssa: el teu <strong>consentiment</strong>, que dones o denegues al formulari de Google i pots retirar a <em>Configuració → Opcions de privadesa dels anuncis</em> (art. 6.1.a RGPD i art. 22.2 LSSI-CE). (3) Publicitat no personalitzada, el seu mesurament, la prevenció del frau i els registres tècnics que reben els serveis de Google quan s’hi connecten (com la teva adreça IP): l’<strong>interès legítim</strong> a finançar una aplicació gratuïta, fer-la funcionar i protegir-la del frau (art. 6.1.f RGPD). (4) Si ens escrius (amb «Escriu-nos» o «Avisa’ns»): l’<strong>interès legítim</strong> a respondre’t i corregir la dada (art. 6.1.f RGPD). Google tracta les dades d’AdMob com a <strong>responsable independent</strong>, amb les seves pròpies polítiques.</p>
+<p>Les dades que es desen al teu telèfon hi romanen fins que les esborris, facis servir «Esborrar les meves dades», desinstal·lis l’aplicació o n’esborris les dades. Aquesta aplicació no conserva cap dada fora del teu telèfon, tret dels missatges que ens envies, que s’esborren quan l’assumpte està resolt i, com a màxim, un any després de rebre’ls; Google conserva les seves segons les seves polítiques.</p>
+
+<h2>Els teus drets</h2>
+<p>Si resideixes a l’Espai Econòmic Europeu, el RGPD et reconeix els drets d’accés, rectificació, supressió, limitació, portabilitat i oposició; al Regne Unit i a Suïssa, les seves lleis de protecció de dades et reconeixen drets semblants. A la pràctica, aquesta aplicació no desa cap dada teva fora del telèfon tret dels missatges que ens envies (per a aquests, escriu-nos a l’adreça de contacte); les dades d’AdMob les tracta Google, davant de qui pots exercir els teus drets (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>). Per al que és al teu telèfon:</p>
+<ul>
+  <li><strong>Accés:</strong> tot el que desa l’aplicació es pot veure a l’aplicació mateixa: les teves persones a <em>Persones</em>, les teves festes a <em>Configuració → Les meves festes</em> i la teva configuració a <em>Configuració</em>. L’aplicació no té cap funció d’exportar; per endur-t’ho a un altre mòbil, consulta «Còpies de seguretat i canvi de mòbil».</li>
+  <li><strong>Rectificació:</strong> canvia una persona o una festa a la mateixa aplicació.</li>
+  <li><strong>Supressió:</strong> esborra una persona («Esborra aquesta persona») o una festa, o fes servir <em>Configuració → Esborrar les meves dades</em>; també pots desinstal·lar l’aplicació. No cal demanar res a ningú.</li>
+  <li><strong>Oposició i retirada del consentiment:</strong> canvia la teva elecció de publicitat a <em>Configuració → Opcions de privadesa dels anuncis</em>. Per deixar de rebre avisos, desactiva «Avís diari del sant» a <em>Configuració</em>, tria «Sense avís» a cada persona o treu el permís de notificacions a la configuració d’Android.</li>
+</ul>
+<p>Visquis on visquis, també pots escriure a l’adreça de contacte o presentar una reclamació davant l’autoritat de protecció de dades del teu país. A Espanya és l’<a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
+
+<h2 id="eeuu">Residents als EUA</h2>
+<p>Si vius en un estat dels EUA amb una llei de privadesa pròpia (per exemple, Califòrnia, Colorado, Connecticut, Texas o Virgínia), tens dret a demanar que les teves dades personals no es venguin ni es comparteixin per a publicitat dirigida. Ho pots fer a l’aplicació: <em>Configuració → Opcions de privadesa dels anuncis</em> → «Don’t sell or share my data». A partir d’aleshores només veuràs anuncis no personalitzats. L’aplicació no envia dades sensibles a ningú: no et pregunta la teva religió, i les persones que apuntes, les seves dates i les teves festes es queden al teu telèfon. Per als anuncis, l’SDK de Google fa servir identificadors del dispositiu i una ubicació aproximada (a escala de ciutat). Per a qualsevol altra petició sobre les teves dades, escriu-nos a <a href="mailto:demual@gmail.com">demual@gmail.com</a>.</p>
+
+<h2>Menors</h2>
+<p>FeliSanto està pensada per a majors de 16 anys i no està adreçada a menors de 16. Els anuncis es limiten a contingut apte per a adolescents (classificació T). No recollim conscientment dades de menors de 16 anys; les dades tècniques que envia AdMob són les descrites més amunt.</p>
+
+<h2>Canvis en aquesta política</h2>
+<p>Si aquesta política canvia de manera substancial, es publicarà la versió nova en aquesta mateixa adreça amb una data d’actualització diferent, i el canvi s’explicarà a les notes de la versió de l’aplicació a Google Play.</p>
+
+<h2>Llicències i dades del santoral</h2>
+<p>FeliSanto fa servir biblioteques de codi obert, com ara Flutter, Riverpod i go_router. La llista amb les seves llicències és a <a href="licencias.html">licencias.html</a> i, completa, a l’aplicació: <em>Configuració → Llicències de codi obert</em>. Les dades del santoral són una base pròpia de JR Soft amb fets (noms, dates i identificadors) de Wikidata, amb la llicència CC0 1.0, contrastats amb el projecte romcal; les línies que descriuen cada sant les escriu JR Soft.</p>
+
+<footer>
+<p>FeliSanto · JR Soft (Javier Román Sáez) · <code>com.jrsoft.felisanto</code> · Contacte: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong> · <a href="privacidad-es.html" lang="es">En castellano</a></p>
+</footer>
+
+</body>
+</html>

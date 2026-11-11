@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · FeliSanto</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #241a1c; background: #fff8f3;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #f1e5e3; background: #1a1213; }
+    td, th { border-color: #3f2a2f !important; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #961e3a; }
+  h3 { font-size: 1.05rem; margin-top: 1.75rem; }
+  @media (prefers-color-scheme: dark) { h2 { color: #f0a3b4; } a { color: #f0a3b4; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .borrador { display: inline-block; margin: .25rem 0 0; padding: .1rem .65rem; border: 1px dashed #b8860b; border-radius: 999px; font-size: .8rem; color: #7a5806; }
+  @media (prefers-color-scheme: dark) { .borrador { color: #e2bc5a; border-color: #e2bc5a; } }
+  .clave { border-left: 4px solid #961e3a; padding: .5rem 0 .5rem 1rem; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Política de privacidad</h1>
+<p class="fecha">Aplicación <strong>FeliSanto</strong> (<code>com.jrsoft.felisanto</code>) · Última actualización: 11 de noviembre de 2026</p>
+<p class="borrador">Borrador pendiente de revisión · no publicado</p>
+
+<div class="clave">
+<p><strong>En una frase:</strong> FeliSanto te dice qué santos se celebran cada día y cuándo es la onomástica de cada nombre, y te avisa para felicitar a tiempo. Funciona sin conexión, sin cuentas y sin servidores propios: las personas que apuntas y tus fiestas se guardan en tu teléfono y no salen de él salvo lo que tú decidas compartir. Aparte de eso, solo salen los datos técnicos y publicitarios que recoge Google para servir los anuncios, explicados más abajo.</p>
+</div>
+
+<h2>Quién es el responsable</h2>
+<p>El responsable del tratamiento es <strong>JR Soft</strong>, nombre comercial de <strong>Javier Román Sáez</strong>, desarrollador de la aplicación FeliSanto. Puedes contactar en <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong>.</p>
+
+<h2>Lo que esta aplicación NO hace</h2>
+<ul>
+  <li>No hay registro, cuenta, usuario ni contraseña de la aplicación. Nunca se te pide tu nombre, un correo, un teléfono ni tu ubicación.</li>
+  <li><strong>No sube tus datos.</strong> Las personas que apuntas, sus fechas, tus fiestas y tus avisos se guardan en tu teléfono. Esta aplicación no tiene servidores propios: JR Soft nunca recibe nada de eso.</li>
+  <li>La aplicación no incluye ninguna herramienta propia de analítica ni de informes de fallos (ni Google Analytics, ni Firebase Analytics, ni Crashlytics) y no usa Firebase. El SDK de publicidad de Google sí envía sus propios datos técnicos, explicados más abajo.</li>
+  <li>No vendemos ni alquilamos tus datos. Para mostrar y medir anuncios, el SDK de anuncios de Google (AdMob) recoge identificadores del dispositivo y se los envía a Google, como se explica en esta política. Algunas leyes de privacidad de EE. UU. pueden considerar eso «vender» o «compartir» datos personales (ver «<a href="#eeuu">Residentes en EE. UU.</a>»).</li>
+  <li><strong>No lee tu agenda.</strong> La aplicación no pide el permiso de leer los contactos (<code>READ_CONTACTS</code>), así que no puede hacerlo. Si usas «Elegir de contactos», se abre el selector de contactos de Android: Android le da acceso solo al contacto que eliges, y de él la aplicación lee solo el nombre, que se guarda como el de cualquier persona que apuntas a mano. No se envía nada.</li>
+  <li>No pide permiso para usar tu ubicación, la cámara, tus fotos ni tus archivos.</li>
+  <li>No te pregunta tu religión ni guarda nada sobre tus creencias o tus prácticas: FeliSanto es una aplicación de onomásticas y tradición.</li>
+  <li>Tus datos no se incluyen en la copia de seguridad de Android en la nube de Google.</li>
+</ul>
+
+<h2>Permisos</h2>
+<ul>
+  <li><strong>Notificaciones</strong> (<code>POST_NOTIFICATIONS</code>), para el aviso diario del santo y los avisos de las onomásticas. En Android 13 o posterior se pide solo cuando activas un aviso. Los avisos los programa el propio teléfono: no llegan desde ningún servidor.</li>
+  <li><strong>Ejecutarse al iniciar el teléfono</strong> (<code>RECEIVE_BOOT_COMPLETED</code>), para volver a programar los avisos y poner al día el widget después de reiniciar el móvil.</li>
+  <li><strong>Internet</strong>, <strong>estado de la red</strong> e <strong>identificador de publicidad</strong> (<code>AD_ID</code> y los permisos de los servicios de publicidad de Android), que necesita la publicidad (ver más abajo). Las bibliotecas de Google añaden también el permiso técnico de sus tareas en segundo plano (<code>WAKE_LOCK</code>). Las personas que apuntas y tus fiestas no salen por aquí.</li>
+  <li>Ninguno más: ni de contactos, ni de ubicación, ni de cámara, ni de almacenamiento, ni de alarmas exactas. Por eso los avisos pueden llegar con unos minutos de margen.</li>
+</ul>
+
+<h2>Datos que se quedan solo en tu teléfono</h2>
+<p>Esta información se guarda en el almacenamiento privado de la aplicación. Desaparece si desinstalas la aplicación o si borras sus datos desde los ajustes de Android.</p>
+<ul>
+  <li>Las <strong>personas</strong> que apuntas: el nombre, el santo o la fecha que eliges (y si celebra la fecha tradicional) y con cuánta antelación quieres el aviso.</li>
+  <li>Tus <strong>fiestas</strong> («Mis fiestas»): el título y el día.</li>
+  <li>Los <strong>avisos programados</strong>, con su texto ya preparado, para que Android los enseñe a su hora.</li>
+  <li>Lo que enseñará el <strong>widget</strong> los próximos días, preparado de antemano para que cambie de día aunque no abras la aplicación.</li>
+  <li>Tus ajustes: tema, idioma, si el aviso diario está activado, la hora de los avisos, si ya viste la bienvenida y unos contadores de uso para saber cuándo pedirte una valoración.</li>
+</ul>
+<p>El santoral va dentro de la aplicación: mirar un santo o buscar un nombre funciona sin conexión, y lo que buscas no sale del teléfono. Los avisos y el widget también funcionan dentro del teléfono.</p>
+<p><strong>Borrar mis datos.</strong> <em>Ajustes → Borrar mis datos</em> borra las personas, tus fiestas y los avisos, y deja los avisos como vienen de serie. Solo se quedan el tema, el idioma, que ya viste la bienvenida y los contadores de la valoración. El widget deja de enseñar esos nombres.</p>
+<p><strong>Lo que se ve fuera de la aplicación.</strong> El widget de la pantalla de inicio enseña el santo del día y, si ese día toca felicitar a alguien, su nombre (o el título de tu fiesta, si ese día no hay santo). Quien vea tu pantalla de inicio verá esos nombres. Los avisos de las onomásticas también llevan el nombre de la persona y, según cómo tengas configurada la pantalla de bloqueo, Android puede enseñarlos ahí.</p>
+<p><strong>Copias de seguridad y cambio de móvil.</strong> La copia de seguridad de Android en la nube (la de tu cuenta de Google) está desactivada para los datos de esta app: no se sube ninguno. Android sí guarda en tu cuenta la lista de las apps que tenías instaladas, para volver a instalarlas, pero esa lista la gestiona Google y no lleva datos de la app.</p>
+<p>Si al configurar un móvil nuevo copias tus datos directamente desde el antiguo, con cable o sin él, los datos de la app (las personas que apuntas, tus fiestas y tus ajustes) pueden pasar al móvil nuevo. Ese traspaso lo pides tú y lo hace Android, con su herramienta o con la del fabricante del móvil y con sus propias condiciones. Según la documentación de Android, va de un móvil a otro sin pasar por servidores. En ningún caso pasa por los nuestros: JR Soft no recibe nada.</p>
+<p>Que se haga depende de la versión de Android y del fabricante (en Android 8 o anterior no se hace), así que no podemos garantizarlo. Si configuras el móvil nuevo desde la copia de tu cuenta de Google, sin el antiguo, los datos de esta app no vuelven, porque no están en esa copia.</p>
+<p>No se traspasa lo que solo sirve en el móvil antiguo, como los avisos ya programados (la app los vuelve a programar en el móvil nuevo cuando la abres) o tu elección sobre los anuncios y el resto del estado de los anuncios: en el móvil nuevo la app te volverá a pedir tu elección.</p>
+
+<h2>Lo que decides compartir tú</h2>
+<ul>
+  <li><strong>Felicitar.</strong> La tarjeta de felicitación es una imagen que se crea en tu teléfono, con el nombre que escribas. Solo sale de él cuando la compartes, con la aplicación y la persona que elijas en la pantalla de compartir de Android.</li>
+  <li><strong>Compartir la app.</strong> Comparte, con la aplicación que elijas, un texto con el enlace de FeliSanto en Google Play. El enlace lleva un parámetro que solo indica que viene de «Compartir la app», sin ningún dato tuyo.</li>
+  <li><strong>Escríbenos.</strong> Abre tu aplicación de correo con un mensaje dirigido a nosotros, con el asunto «FeliSanto». Solo se envía si tú lo mandas.</li>
+  <li><strong>Avísanos de un error.</strong> «¿Algo está mal? Avísanos», en la ficha de cada santo, y «¿Falta este nombre? Avísanos», cuando una búsqueda no encuentra nada, abren tu aplicación de correo con un mensaje ya escrito, que solo se envía si tú lo mandas. Lleva el santo (su nombre y su identificador) o el nombre que has buscado, el idioma de la aplicación y su versión. No lleva nada de las personas que apuntas ni de tus fiestas.</li>
+</ul>
+<p>Si nos escribes, por cualquiera de estas dos vías, recibimos tu dirección de correo y lo que nos cuentes. Lo usamos solo para responderte y corregir el dato, y borramos el mensaje cuando el asunto está resuelto y, como mucho, un año después de recibirlo.</p>
+
+<h2>Datos que sí salen del teléfono</h2>
+
+<h3>Publicidad: Google AdMob</h3>
+<p>La aplicación es gratuita y se mantiene con anuncios discretos de Google AdMob: un banner al pie de las pantallas Hoy, Calendario y Buscar, de vez en cuando un anuncio entre los resultados de la búsqueda y uno al final de la ficha de cada santo, separado de su contenido. Nunca en Personas, en Ajustes, en la felicitación, en el widget, en los avisos ni a pantalla completa. Las peticiones de anuncios no llevan nada de las personas que apuntas, de tus fiestas ni de lo que buscas. Los anuncios se limitan a contenido apto para adolescentes (clasificación T).</p>
+<p>Como cualquier aplicación con AdMob, el SDK de Google recoge por su cuenta el <strong>identificador de publicidad</strong> de Android (lo puedes restablecer o borrar en <em>Ajustes de Android → Google → Anuncios</em>), el identificador del conjunto de aplicaciones (<em>app set ID</em>), tu dirección IP (de la que se deduce una ubicación aproximada), las interacciones con la aplicación y con los anuncios y datos de diagnóstico. Google los usa para servir y medir la publicidad, para estadísticas y para prevenir fraudes, según su propia política.</p>
+<p>En el Espacio Económico Europeo, el Reino Unido y Suiza, la aplicación muestra el formulario de consentimiento de Google antes de servir publicidad personalizada. Puedes cambiar tu elección cuando quieras en <em>Ajustes → Opciones de privacidad de los anuncios</em>. Si rechazas, verás publicidad no personalizada (o limitada, sin identificadores, si tampoco aceptas el uso del almacenamiento) y la aplicación funciona exactamente igual.</p>
+<p>Cómo usa Google la información de las apps que usan sus servicios: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+
+<h3>Valoraciones y Google Play</h3>
+<p>De vez en cuando, después de un buen momento (por ejemplo, al guardar a una persona o al compartir una felicitación), la aplicación puede pedirte una valoración con la ventana oficial de Google Play, que gestiona Google. «Valora la app» y «Más apps de JR Soft» abren Google Play; sus enlaces llevan un parámetro de campaña que solo indica que vienen de FeliSanto, sin ningún dato tuyo. Para enseñarte solo las apps disponibles en tu país, «Más apps de JR Soft» mira en el teléfono el país de la tarjeta SIM o, si no hay, el de la región del sistema. No necesita ningún permiso y ese dato no sale del móvil.</p>
+
+<h3>Dirección IP</h3>
+<p>Como en cualquier aplicación que se conecta a internet, los servicios de Google mencionados reciben tu dirección IP y los datos técnicos de la conexión al conectarse. Esta aplicación no tiene servidores propios, así que no guarda registros de ningún tipo.</p>
+
+<h2>Terceros implicados</h2>
+<table>
+  <tr><th>Servicio</th><th>Para qué</th><th>Su política</th></tr>
+  <tr>
+    <td>Google AdMob</td>
+    <td>Publicidad y formulario de consentimiento</td>
+    <td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td>
+  </tr>
+  <tr>
+    <td>Google Play</td>
+    <td>Valoraciones y enlaces a la ficha de las aplicaciones</td>
+    <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Las aplicaciones que elijas</td>
+    <td>Solo cuando compartes una felicitación o la app, o nos escribes (correo, mensajería)</td>
+    <td>La de cada aplicación</td>
+  </tr>
+</table>
+
+<h2>Transferencias internacionales</h2>
+<p>Google LLC puede tratar estos datos en Estados Unidos y otros países. Google está adherido al <strong>Marco de Privacidad de Datos UE-EE. UU.</strong> (decisión de adecuación de la Comisión Europea de 10 de julio de 2023), con sus ampliaciones para el Reino Unido y Suiza, y usa <strong>cláusulas contractuales tipo</strong> cuando hacen falta: <a href="https://policies.google.com/privacy/frameworks">policies.google.com/privacy/frameworks</a>. El correo de contacto también es un servicio de Google (Gmail).</p>
+
+<h2>Base legal y conservación</h2>
+<p><strong>Base jurídica.</strong> (1) El <strong>funcionamiento de la aplicación</strong> (el santoral, las personas que apuntas, tus fiestas, los avisos y el widget): es lo necesario para darte el servicio que pides al usarla (art. 6.1.b RGPD). Todo eso se procesa en tu teléfono y no llega a JR Soft; el traspaso entre móviles lo haces tú con una función de Android y tampoco nos llega ningún dato. (2) Publicidad personalizada y uso del almacenamiento del dispositivo con fines publicitarios en el EEE, el Reino Unido y Suiza: tu <strong>consentimiento</strong>, que das o niegas en el formulario de Google y puedes retirar en <em>Ajustes → Opciones de privacidad de los anuncios</em> (art. 6.1.a RGPD y art. 22.2 LSSI-CE). (3) Publicidad no personalizada, su medición, la prevención del fraude y los registros técnicos que reciben los servicios de Google al conectarse (como tu dirección IP): el <strong>interés legítimo</strong> en financiar una aplicación gratuita, hacerla funcionar y protegerla del fraude (art. 6.1.f RGPD). (4) Si nos escribes (con «Escríbenos» o «Avísanos»): el <strong>interés legítimo</strong> en responderte y corregir el dato (art. 6.1.f RGPD). Google trata los datos de AdMob como <strong>responsable independiente</strong>, con sus propias políticas.</p>
+<p>Los datos que se guardan en tu teléfono permanecen hasta que los borras, usas «Borrar mis datos», desinstalas la aplicación o borras sus datos. Esta aplicación no conserva ningún dato fuera de tu teléfono, salvo los mensajes que nos mandas, que se borran cuando el asunto está resuelto y, como mucho, un año después de recibirlos; Google conserva los suyos según sus políticas.</p>
+
+<h2>Tus derechos</h2>
+<p>Si resides en el Espacio Económico Europeo, el RGPD te reconoce los derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición; en el Reino Unido y Suiza, sus leyes de protección de datos te reconocen derechos parecidos. En la práctica, esta aplicación no guarda ningún dato tuyo fuera del teléfono salvo los mensajes que nos envías (para ellos, escríbenos a la dirección de contacto); los datos de AdMob los trata Google, ante quien puedes ejercer tus derechos (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>). Para lo que está en tu teléfono:</p>
+<ul>
+  <li><strong>Acceso:</strong> todo lo que la aplicación guarda está a la vista en ella: tus personas en <em>Personas</em>, tus fiestas en <em>Ajustes → Mis fiestas</em> y tus ajustes en <em>Ajustes</em>. La aplicación no tiene una función de exportar; para llevártelo a otro móvil, mira «Copias de seguridad y cambio de móvil».</li>
+  <li><strong>Rectificación:</strong> cambia a una persona o una fiesta en la propia aplicación.</li>
+  <li><strong>Supresión:</strong> borra a una persona («Borrar a esta persona») o una fiesta, o usa <em>Ajustes → Borrar mis datos</em>; también puedes desinstalar la aplicación. No hace falta pedir nada a nadie.</li>
+  <li><strong>Oposición y retirada del consentimiento:</strong> cambia tu elección de publicidad en <em>Ajustes → Opciones de privacidad de los anuncios</em>. Para dejar de recibir avisos, desactiva el «Aviso diario del santo» en <em>Ajustes</em>, elige «Sin aviso» en cada persona o quita el permiso de notificaciones en los ajustes de Android.</li>
+</ul>
+<p>Vivas donde vivas, también puedes escribir a la dirección de contacto o reclamar ante la autoridad de protección de datos de tu país. En España es la <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
+
+<h2 id="eeuu">Residentes en EE. UU.</h2>
+<p>Si vives en un estado de EE. UU. con ley de privacidad propia (por ejemplo, California, Colorado, Connecticut, Texas o Virginia), tienes derecho a pedir que tus datos personales no se vendan ni se compartan para publicidad dirigida. Puedes hacerlo en la aplicación: <em>Ajustes → Opciones de privacidad de los anuncios</em> → «No vender ni compartir mis datos» (si el teléfono no está en español, «Don’t sell or share my data»). Desde entonces solo verás anuncios no personalizados. La aplicación no envía datos sensibles a nadie: no te pregunta tu religión, y las personas que apuntas, sus fechas y tus fiestas se quedan en tu teléfono. Para los anuncios, el SDK de Google usa identificadores del dispositivo y una ubicación aproximada (a nivel de ciudad). Para cualquier otra petición sobre tus datos, escríbenos a <a href="mailto:demual@gmail.com">demual@gmail.com</a>.</p>
+
+<h2>Menores</h2>
+<p>FeliSanto está pensada para mayores de 16 años y no está dirigida a menores de 16. Los anuncios se limitan a contenido apto para adolescentes (clasificación T). No recogemos a sabiendas datos de menores de 16 años; los datos técnicos que envía AdMob son los descritos más arriba.</p>
+
+<h2>Cambios en esta política</h2>
+<p>Si esta política cambia de forma sustancial, se publicará la versión nueva en esta misma dirección con una fecha de actualización distinta, y el cambio se contará en las notas de la versión de la aplicación en Google Play.</p>
+
+<h2>Licencias y datos del santoral</h2>
+<p>FeliSanto usa bibliotecas de código abierto, como Flutter, Riverpod y go_router. La lista con sus licencias está en <a href="licencias.html">licencias.html</a> y, completa, en la aplicación: <em>Ajustes → Licencias de código abierto</em>. Los datos del santoral son una base propia de JR Soft con hechos (nombres, fechas e identificadores) de Wikidata, bajo la licencia CC0 1.0, contrastados con el proyecto romcal; las líneas que describen a cada santo las escribe JR Soft.</p>
+
+<footer>
+<p>FeliSanto · JR Soft (Javier Román Sáez) · <code>com.jrsoft.felisanto</code> · Contacto: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong> · <a href="privadesa-ca.html" lang="ca">En català</a></p>
+</footer>
+
+</body>
+</html>

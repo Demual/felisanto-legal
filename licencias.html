@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Licencias y datos · FeliSanto</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #241a1c; background: #fff8f3;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #f1e5e3; background: #1a1213; }
+    td, th { border-color: #3f2a2f !important; }
+    a { color: #f0a3b4; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #961e3a; }
+  @media (prefers-color-scheme: dark) { h2 { color: #f0a3b4; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Licencias de código abierto y datos</h1>
+<p class="fecha">Llicències de codi obert i dades · <strong>FeliSanto</strong> (<code>com.jrsoft.felisanto</code>) · 11 de noviembre de 2026</p>
+
+<p>FeliSanto está hecho con estas bibliotecas de código abierto, a cuyos autores
+agradecemos su trabajo, y con una base de datos del santoral propia. Dentro de la
+aplicación, en <em>Ajustes → Licencias de código abierto</em>, están el texto entero
+de la licencia de cada paquete de Flutter y Dart, el de la licencia Apache de
+AndroidX y Kotlin, y la nota sobre los datos del santoral.</p>
+<p lang="ca"><em>FeliSanto està fet amb aquestes biblioteques de codi obert i amb una
+base de dades del santoral pròpia. El text sencer de cada llicència és a l’aplicació:
+Configuració → Llicències de codi obert.</em></p>
+
+<h2>Los datos del santoral</h2>
+<p>El santoral de FeliSanto es una base de datos propia de JR Soft, que va dentro de
+la aplicación y se consulta sin conexión.</p>
+<table>
+  <tr><th>Fuente</th><th>Qué aporta</th><th>Licencia</th></tr>
+  <tr><td><a href="https://www.wikidata.org">Wikidata</a></td><td>Los hechos: los nombres de los santos, sus fechas, el rango de cada celebración y su identificador</td><td><a href="https://www.wikidata.org/wiki/Wikidata:Licensing">CC0 1.0</a> (dominio público)</td></tr>
+  <tr><td><a href="https://github.com/romcal/romcal">romcal</a> y el Calendario Romano General</td><td>Contrastar las fechas al preparar los datos. romcal no va dentro de la aplicación</td><td>romcal: MIT</td></tr>
+  <tr><td>JR Soft</td><td>La selección, la comprobación y la línea que describe a cada santo, escrita por nosotros</td><td>Propia</td></tr>
+</table>
+<p>La licencia CC0 de Wikidata no exige atribución, pero lo decimos con gusto:
+los hechos vienen de Wikidata y de quienes la mantienen. romcal es Copyright (c) 2018
+Julian Pereira.</p>
+<p lang="ca"><em>Les dades del santoral són una base pròpia de JR Soft amb fets de
+Wikidata (CC0 1.0), contrastats amb romcal (MIT), que no va dins de l’aplicació, i
+amb el Calendari Romà General. Les línies que descriuen cada sant les escriu JR Soft.</em></p>
+
+<h2>La aplicación</h2>
+<table>
+  <tr><th>Biblioteca</th><th>Licencia</th></tr>
+  <tr><td><a href="https://flutter.dev">Flutter</a> y Dart</td><td>BSD de 3 cláusulas</td></tr>
+  <tr><td>flutter_riverpod, riverpod</td><td>MIT</td></tr>
+  <tr><td>go_router, url_launcher, shared_preferences, path_provider</td><td>BSD de 3 cláusulas</td></tr>
+  <tr><td>intl, path, characters, collection</td><td>BSD de 3 cláusulas</td></tr>
+  <tr><td>clock</td><td>Apache 2.0</td></tr>
+  <tr><td>share_plus, package_info_plus</td><td>BSD de 3 cláusulas</td></tr>
+  <tr><td>in_app_review</td><td>MIT</td></tr>
+  <tr><td>google_mobile_ads (el complemento de Flutter)</td><td>Apache 2.0</td></tr>
+  <tr><td>webview_flutter, dentro de google_mobile_ads</td><td>BSD de 3 cláusulas</td></tr>
+  <tr><td>firebase_core, firebase_remote_config (los complementos)</td><td>BSD de 3 cláusulas</td></tr>
+</table>
+
+<h2>Android</h2>
+<table>
+  <tr><th>Biblioteca</th><th>Para qué</th><th>Licencia</th></tr>
+  <tr><td>AndroidX (Jetpack)</td><td>La base de la aplicación en Android, que traen los complementos y el SDK de anuncios</td><td>Apache 2.0</td></tr>
+  <tr><td>Biblioteca estándar de Kotlin</td><td>Los avisos, el widget y el selector de contactos, escritos en Kotlin</td><td>Apache 2.0</td></tr>
+  <tr><td><a href="https://github.com/firebase/firebase-android-sdk">Firebase Android SDK</a></td><td>Va con la configuración remota de la publicidad, que esta versión no activa</td><td>Apache 2.0</td></tr>
+</table>
+
+<h2>Avisos de copyright</h2>
+<ul>
+  <li>AndroidX: Copyright The Android Open Source Project.</li>
+  <li>Biblioteca estándar de Kotlin: Copyright JetBrains s.r.o. y los colaboradores del lenguaje Kotlin.</li>
+  <li>Firebase Android SDK: Copyright Google LLC.</li>
+  <li>romcal: Copyright (c) 2018 Julian Pereira (MIT). Solo se usa para contrastar los datos; no va dentro de la aplicación.</li>
+</ul>
+
+<h2>Servicios de Google (no son de código abierto)</h2>
+<p>El <strong>SDK de Google Mobile Ads</strong> con la <strong>plataforma de
+mensajes de usuario</strong> de Google (el formulario de consentimiento), la
+biblioteca de <strong>valoraciones de Google Play</strong> y los <strong>servicios
+de Google Play</strong> se usan según las condiciones de Google. Lo que hacen con
+tus datos está en la política de privacidad, en <a href="privacidad-es.html">castellano</a>
+y en <a href="privadesa-ca.html" lang="ca">català</a>.</p>
+
+<footer>
+<p>FeliSanto · JR Soft (Javier Román Sáez) · <a href="index.html">Documentos legales</a> ·
+<a href="mailto:demual@gmail.com">demual@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
