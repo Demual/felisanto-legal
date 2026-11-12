@@ -1,7 +1,7 @@
 # Documentos legales de FeliSanto
 
-> **BORRADOR privado.** Pendiente de la revisión del agente `legal` y de la
-> aprobación de Javier. No se publica hasta que Javier lo apruebe.
+> Publicado el 12/11/2026 con GitHub Pages, tras la revisión del agente `legal`
+> y con la aprobación de Javier.
 
 Política de privacidad y licencias de la aplicación **FeliSanto**, un santoral
 con onomásticas y avisos para felicitar a tiempo, para Android.
@@ -25,10 +25,9 @@ su idioma (`AppConfig.privacyDocument`, en `app/lib/core/config.dart` del
 repositorio de la app). Ese código ya prevé `privacy-it.html` para el italiano
 de la v1.1: hay que crearla antes de publicar esa versión.
 
-Las dos políticas llevan la marca de borrador (`<p class="borrador">`, debajo de
-la fecha, y su regla en el `<style>`). Se quita de las dos al publicarlas.
+La marca de borrador se quitó de las dos políticas al publicarlas (12/11/2026).
 
-Cuando Javier lo apruebe, se publicará con GitHub Pages desde la rama `main` en
+Se publica con GitHub Pages desde la rama `main` en
 `https://demual.github.io/felisanto-legal/` (el `PRIVACY_URL` de la build de
 Google Play: si acaba en `/`, la app le añade el fichero de su idioma). El
 historial de commits servirá además como registro de qué decía la política en
